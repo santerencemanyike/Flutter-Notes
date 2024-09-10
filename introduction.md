@@ -38,4 +38,10 @@ void main() {
   appBar properties :
      * title (Text)
      * centerTitle (Boolean)
-1. Center widget //Body of the app
+  
+2. Center widget //Body of the app
+   * child
+
+3. FloatingActionButton widget //Bottom right button
+   * child
+  
