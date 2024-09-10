@@ -30,3 +30,12 @@ void main() {
 * In the above code, the runApp() method is the root tree for this widget.
 * The child is the property of this app.
 * Text is a widget but can also be a value based on ui requirements.
+
+## Widgets
+### Scaffold widget properties
+
+1. AppBar widget //Navbar  
+  appBar properties :
+     * title (Text)
+     * centerTitle (Boolean)
+1. Center widget //Body of the app
