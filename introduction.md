@@ -55,6 +55,9 @@ void main() {
    * letterSpacing
    * color, backgroundColor, etc....  (e.g. Colors.grey[600])
 
+6. Image widget
+   * image (AssetImage(path))
+
 ```Dart
 void main() => runApp(MaterialApp(
     home: Scaffold(
@@ -83,3 +86,39 @@ void main() => runApp(MaterialApp(
 3. _Full restart_ Recompiles the whole app thus taking more time to finish executing. 
    
 ## Stateless widget
+Stateless widgets are for handling final data which never changes in the app.  
+Below is a snipet of an implimentation of a stateless widget.
+```Dart
+class MyWidget extends StatelessWidget {
+  // const MyWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(
+      appBar: AppBar(
+        title: Text(
+          "My test title",
+          style: TextStyle(fontFamily: 'indiFlower'),
+        ),
+        centerTitle: true,
+      ),
+      body: Center(
+        child: Text(
+          'Centered body text',
+          style: TextStyle(fontFamily: 'indiFlower'),
+        ),
+      ),
+      floatingActionButton: FloatingActionButton(
+        child: Text(
+          'Scroll',
+          style: TextStyle(fontFamily: 'indiFlower'),
+        ),
+        onPressed: () {
+          // Action to perform when the button is pressed
+          print('FloatingActionButton pressed!');
+        }
+      ),
+    );
+  }
+}
+```
