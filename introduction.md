@@ -31,7 +31,7 @@ void main() {
 * The child is the property of this app.
 * Text is a widget but can also be a value based on ui requirements.
 
-## Widgets
+## Some Widgets
 ### Scaffold widget properties
 
 1. AppBar widget //Navbar  
@@ -44,4 +44,42 @@ void main() {
 
 3. FloatingActionButton widget //Bottom right button
    * child
-  
+
+4. Text widget //just text
+   * 'String text'
+   * style
+
+5. TextStyle widget
+   * fontSize
+   * fontWeigth (e.g. Fontweight.bold)
+   * letterSpacing
+   * color, backgroundColor, etc....  (e.g. Colors.grey[600])
+
+```Dart
+void main() => runApp(MaterialApp(
+    home: Scaffold(
+        appBar: AppBar(
+            title: Text("My test title"),
+            centerTitle: true,
+        ),
+        body: Center(
+          child: Text("Centered body text"),
+        ),
+        floatingActionButton: FloatingActionButton(
+          child: Text("Scroll"),
+          onPressed: () {
+            // Action to perform when the button is pressed
+            print("FloatingActionButton pressed!");
+          },
+        ),
+    )
+));
+```
+## 
+
+## Hot Reload, Hot Restart, Full Restart
+1. _Hot reload_ will rebuild all the widget trees without a rerun on the main() and initState() thus preserving it's app state.
+2. _Hot restart_ will restart the Flutter app and loose it's app state.
+3. _Full restart_ Recompiles the whole app thus taking more time to finish executing. 
+   
+## Stateless widget
