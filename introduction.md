@@ -58,6 +58,24 @@ void main() {
 6. Image widget
    * image (AssetImage(path))
 
+7. Padding widget
+   * padding (e.g. EdgeInsets.all(20))
+  
+8. Margin widget
+   * margin (EdgeInsets.only(Bottom: 20))
+
+9. Row widget // x axis
+   * mainAxisAlignment e.g. mainAxisAlignment.start // Every widget content will be placed on the left.
+
+10. Column widget // y axis
+   * crossAxisAlignment e.g. CrossAxisAlignment.spaceEvenly // Every widget content will be evenly separated from each other
+  
+11. Image widget
+   * image e.g. Image.asset("Image path",...,nth properties)
+
+<br>
+<br>
+
 ```Dart
 void main() => runApp(MaterialApp(
     home: Scaffold(
