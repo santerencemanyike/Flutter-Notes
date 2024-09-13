@@ -73,6 +73,11 @@ void main() {
 11. Image widget
    * image e.g. Image.asset("Image path",...,nth properties)
 
+12. Stack widget
+   * alignment e.g. Alignment.center // Will stack widgets on top of each other
+
+13. 
+
 <br>
 <br>
 
@@ -140,3 +145,32 @@ class MyWidget extends StatelessWidget {
   }
 }
 ```
+## Flutter Layouts
+
+
+## Custom widgets
+
+
+## Nesting widgets
+
+e.g.
+```Dart
+body: const SingleChildScrollView(
+  child: Column(
+    children: [
+      ImageWidget(
+        image: 'images/background.jpg',
+      ),
+      LocationWidget(
+        name: 'San Terence Manyike',
+        location: 'Nizhny Novgorod',
+      ),
+      ButtonSectionWidget(),
+      TextWidget(
+        description: 'Test description'
+      ),
+    ]
+  )
+),
+```
+
